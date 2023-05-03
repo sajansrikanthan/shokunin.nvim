@@ -205,6 +205,12 @@ theme.set_highlights = function()
   hl(0, "TelescopeSelection", { fg = c.purple, bg = 'NONE' })
   hl(0, "TelescopeMatching", { fg = c.orange2, bg = 'NONE', bold=true, })
   hl(0, "TelescopeBorder", { fg = c.orange1, bg = c.bg })
+
+  -- StatusLine
+  hl(0, "StatusLine", { fg = c.fg, bg = c.bg })
+  hl(0, "StatusLineNC", { fg = c.fg, bg = c.bg })
+  hl(0, "StatusLineTerm", { link = 'StatusLine' })
+  hl(0, "StatusLineTermNC", { link = 'StatusLineNC' })
 end
 
 return theme
